@@ -19,7 +19,15 @@ const App = () => {
       {/* About Us Section */}
       <About />
 
-      {/* Services Section */}
+      {/* Services Section */}// src/App.tsx
+import React from 'react';
+import Hero from './components/Hero.tsx';      // Changed from './components/Hero'
+import About from './components/About.tsx';    // Changed from './components/About'
+import Services from './components/Services.tsx';// Changed from './components/Services'
+import Team from './components/Team.tsx';      // Changed from './components/Team'
+import Contact from './components/Contact.tsx';// Changed from './components/Contact'
+
+// ... rest of your App.tsx code
       <Services />
 
       {/* Team Section */}
