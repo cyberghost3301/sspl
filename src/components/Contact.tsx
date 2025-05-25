@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
           {/* Phone Number */}
           <div className="flex items-center space-x-3 animate-[slideInLeft_1s_ease-out_forwards_0.9s] opacity-0">
             <FaPhone className="text-3xl" />
-            <a href="tel:+91XXXXXXXXXX" className="text-xl md:text-2xl hover:underline">+91 XXXXXXXXXX</a> {/* Replace with actual number */}
+            <a href="tel:+917651882563" className="text-xl md:text-2xl hover:underline">+91 XXXXXXXXXX</a> {/* Replace with actual number */}
           </div>
 
           {/* Email Address */}
