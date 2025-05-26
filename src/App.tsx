@@ -1,40 +1,33 @@
 // src/App.tsx
 import React from 'react';
+import Navbar from './components/Navbar'; // Import Navbar
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
 import Team from './components/Team';
-import Contact from './components/Contact'; // Import the Contact component
+import Contact from './components/Contact';
 
 const App = () => {
+  const ssplCompanyName = "SSPL"; // Define company name here
   const ssplTagline = "Smart Ideas. Solid Executions. Scalable Results.";
   const ssplMotto = "Spot. Solve. Serve.";
   const heroCallToAction = "Discover Our Solutions";
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans text-gray-800">
-      {/* Hero Section */}
-      <Hero tagline={ssplTagline} motto={ssplMotto} callToAction={heroCallToAction} />
+      {/* Navigation Bar */}
+      <Navbar companyName={ssplCompanyName} />
 
-      {/* About Us Section */}
+      {/* Hero Section - Added pt-20 (or similar) to push content below fixed nav */}
+      <div className="pt-20"> {/* Adjust this padding as needed to clear the fixed navbar */}
+        <Hero tagline={ssplTagline} motto={ssplMotto} callToAction={heroCallToAction} />
+      </div>
+
+      {/* Other sections */}
       <About />
-
-      {/* Services Section */}// src/App.tsx
-import React from 'react';
-import Hero from './components/Hero.tsx';      // Changed from './components/Hero'
-import About from './components/About.tsx';    // Changed from './components/About'
-import Services from './components/Services.tsx';// Changed from './components/Services'
-import Team from './components/Team.tsx';      // Changed from './components/Team'
-import Contact from './components/Contact.tsx';// Changed from './components/Contact'
-
-// ... rest of your App.tsx code
       <Services />
-
-      {/* Team Section */}
       <Team />
-
-      {/* Contact Us Section */}
-      <Contact /> {/* Add the Contact component here */}
+      <Contact />
 
       {/* Footer Section */}
       <footer className="w-full text-center py-8 bg-gray-900 text-gray-400 text-sm">
