@@ -24,7 +24,7 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Section 2: Core Activities & Specializations (Detailed) */}
+        {/* Section 2: Core Activities & Specializations (Detailed)
         <div className="mb-16 md:mb-24 animate-[fadeIn_1s_ease-out_forwards_1s] opacity-0">
           <h3 className="text-3xl font-semibold text-indigo-600 mb-8 text-center">Our Expertise & Offerings</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -65,7 +65,7 @@ const About: React.FC = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div>*/}
 
         {/* Section 3: Unique Differentiators & Team */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
