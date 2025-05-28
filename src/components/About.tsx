@@ -14,7 +14,7 @@ const About: React.FC = () => {
           <div className="md:order-2"> {/* Image/Placeholder on right for desktop */}
             {/* Replaced placeholder div with img tag */}
             <img
-              src="/about-us-1.png" // Path to your image in the public folder
+              src="public/about-us-1.png" // Path to your image in the public folder
               alt="Diverse technology solutions from SSPL" // Descriptive alt text
               className="h-64 md:h-96 rounded-lg shadow-lg object-cover w-full animate-[scaleIn_1s_ease-out_forwards_0.6s] opacity-0"
             />
