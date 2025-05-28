@@ -1,22 +1,26 @@
 // src/components/Team.tsx
 import React from 'react';
 
+// Import your profile images directly from src/assets
+import aumProfile from '../assets/aum-profile.jpg';
+import desheshProfile from '../assets/deshesh-profile.jpg';
+
 interface TeamMember {
   name: string;
   title: string;
-  imageSrc: string; // Placeholder for image URL
+  imageSrc: string; // This will now hold the imported image URL
 }
 
 const teamMembers: TeamMember[] = [
   {
     name: 'Aum Chatterjee',
     title: 'Founding Director',
-    imageSrc: '/assets/aum-profile.jpg', // Placeholder image path
+    imageSrc: aumProfile, // Use the imported image variable
   },
   {
     name: 'Deshesh Agnihotri',
     title: 'Managing Director',
-    imageSrc: '/assets/deshesh-profile.jpg', // Placeholder image path
+    imageSrc: desheshProfile, // Use the imported image variable
   },
 ];
 
@@ -32,7 +36,7 @@ const Team: React.FC = () => {
           {teamMembers.map((member, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               <img
-                src={member.imageSrc}
+                src={member.imageSrc} // This now uses the imported image
                 alt={`Profile of ${member.name}`}
                 className="w-48 h-48 rounded-full object-cover shadow-md mb-6"
               />
