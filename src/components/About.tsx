@@ -12,12 +12,9 @@ const About: React.FC = () => {
         {/* Section 1: Business Core */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16 md:mb-24">
           <div className="md:order-2"> {/* Image/Placeholder on right for desktop */}
-            {/* Replaced placeholder div with img tag */}
-            <img
-              src="public/about-us-1.png" // Path to your image in the public folder
-              alt="Diverse technology solutions from SSPL" // Descriptive alt text
-              className="h-64 md:h-96 rounded-lg shadow-lg object-cover w-full animate-[scaleIn_1s_ease-out_forwards_0.6s] opacity-0"
-            />
+            <div className="bg-gray-200 h-64 md:h-96 rounded-lg flex items-center justify-center text-gray-500 text-lg font-semibold shadow-lg animate-[scaleIn_1s_ease-out_forwards_0.6s] opacity-0">
+              [Placeholder: Image - Diversified Tech Solutions]
+            </div>
           </div>
           <div className="md:order-1 text-center md:text-left animate-[slideInLeft_1s_ease-out_forwards_0.8s] opacity-0">
             <h3 className="text-3xl font-semibold text-indigo-600 mb-4">Your Trusted Technology Partner</h3>
@@ -27,8 +24,48 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Section 2: Core Activities & Specializations (Detailed) - This section is commented out in your provided code */}
-        {/* If you want to uncomment and update this section, remember to follow similar image integration steps */}
+        {/* Section 2: Core Activities & Specializations (Detailed) */}
+        <div className="mb-16 md:mb-24 animate-[fadeIn_1s_ease-out_forwards_1s] opacity-0">
+          <h3 className="text-3xl font-semibold text-indigo-600 mb-8 text-center">Our Expertise & Offerings</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+              <h4 className="text-xl font-bold text-blue-700 mb-3">Hardware & Software Solutions</h4>
+              <p className="text-md text-gray-700">
+                Sale, purchase, repair, and trading of computers, laptops, and related hardware/software. From components to complete systems, we cover all your computing needs.
+              </p>
+            </div>
+            <div className="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+              <h4 className="text-xl font-bold text-blue-700 mb-3">Advanced Surveillance Systems</h4>
+              <p className="text-md text-gray-700">
+                Specializing in comprehensive security solutions: CCTV, biometric access control, attendance systems, X-ray baggage scanners, and metal detectors.
+              </p>
+            </div>
+            <div className="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+              <h4 className="text-xl font-bold text-blue-700 mb-3">Networking & Cloud Infrastructure</h4>
+              <p className="text-md text-gray-700">
+                Expert services in networking setups, robust server installations, seamless cloud solutions, and innovative IoT-based integrations.
+              </p>
+            </div>
+            <div className="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+              <h4 className="text-xl font-bold text-blue-700 mb-3">Smart Home & Office Automation</h4>
+              <p className="text-md text-gray-700">
+                Transforming spaces with smart solutions: motorized curtain tracks, automatic pet feeders, and efficient plant irrigation systems.
+              </p>
+            </div>
+            <div className="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+              <h4 className="text-xl font-bold text-blue-700 mb-3">Power & Entertainment Systems</h4>
+              <p className="text-md text-gray-700">
+                Complete solar power system projects, immersive Hi-Fi audio systems, and custom home theatre installations.
+              </p>
+            </div>
+            <div className="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+              <h4 className="text-xl font-bold text-blue-700 mb-3">Custom Studio Builds & Digital Wing</h4>
+              <p className="text-md text-gray-700">
+                Building custom YouTube/news/video recording studios. Our digital wing handles web, app, and software design across all major platforms.
+              </p>
+            </div>
+          </div>
+        </div>
 
         {/* Section 3: Unique Differentiators & Team */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
@@ -42,14 +79,13 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="md:order-2 animate-[scaleIn_1s_ease-out_forwards_1.4s] opacity-0">
-            {/* Replaced placeholder div with img tag */}
-            <img
-              src="/about-us-1.png" // Using the same image for learning purposes
-              alt="Customized solutions and a scalable team at SSPL" // Descriptive alt text
-              className="h-64 md:h-96 rounded-lg shadow-lg object-cover w-full"
-            />
+            {/* Placeholder for an image or illustration related to custom solutions/teamwork */}
+            <div className="bg-gray-200 h-64 md:h-96 rounded-lg flex items-center justify-center text-gray-500 text-lg font-semibold shadow-lg">
+              [Placeholder: Image - Customization & Teamwork]
+            </div>
           </div>
         </div>
+
       </div>
     </section>
   );
