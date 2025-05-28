@@ -2,8 +2,8 @@
 import React from 'react';
 
 // Import your profile images directly from src/assets
-import aumProfile from '../assets/aum-profile.jpg';
-import desheshProfile from '../assets/deshesh-profile.jpg';
+import aumProfile from '../assets/placeholder.jpg';
+import desheshProfile from '../assets/placeholder.jpg';
 
 interface TeamMember {
   name: string;
