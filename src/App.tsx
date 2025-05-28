@@ -6,6 +6,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Team from './components/Team';
 import Contact from './components/Contact';
+import { Footer } from './components/Footer'; // <--- IMPORT THE FOOTER COMPONENT HERE
 
 const App = () => {
   const ssplCompanyName = "SSPL"; // Define company name here
@@ -29,11 +30,8 @@ const App = () => {
       <Team />
       <Contact />
 
-      {/* Footer Section */}
-      <footer className="w-full text-center py-8 bg-gray-900 text-gray-400 text-sm">
-        <p>&copy; {new Date().getFullYear()} SSPL. All rights reserved.</p>
-        <p>Powered by React and Tailwind CSS.</p>
-      </footer>
+      {/* Footer Section - Now using the dedicated Footer component */}
+      <Footer /> {/* <--- USE THE FOOTER COMPONENT HERE */}
     </div>
   );
 };

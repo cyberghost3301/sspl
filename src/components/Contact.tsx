@@ -18,19 +18,22 @@ const Contact: React.FC = () => {
           {/* Phone Number */}
           <div className="flex items-center space-x-3 animate-[slideInLeft_1s_ease-out_forwards_0.9s] opacity-0">
             <FaPhone className="text-3xl" />
-            <a href="tel:+917651882563" className="text-xl md:text-2xl hover:underline">+91 7651882563</a> {/* Replace with actual number */}
+            <a href="tel:+917651882563" className="text-xl md:text-2xl hover:underline whitespace-nowrap">
+              +91 76518 82563
+            </a>
           </div>
 
           {/* Email Address */}
           <div className="flex items-center space-x-3 animate-[fadeIn_1s_ease-out_forwards_1.2s] opacity-0">
             <FaEnvelope className="text-3xl" />
-            <a href="mailto:info@sspl.pcmechanix.in" className="text-xl md:text-2xl hover:underline">info@sspl.pcmechanix.in</a> {/* Replace with actual email */}
+            <a href="mailto:info@sspl.pcmechanix.in" className="text-xl md:text-2xl hover:underline">info@sspl.pcmechanix.in</a>
           </div>
 
           {/* Address */}
           <div className="flex items-center space-x-3 animate-[slideInRight_1s_ease-out_forwards_1.5s] opacity-0">
             <FaMapMarkerAlt className="text-3xl" />
-            <span className="text-xl md:text-2xl">Lucknow, Uttar Pradesh, India</span>
+            {/* Added whitespace-nowrap here */}
+            <span className="text-xl md:text-2xl whitespace-nowrap">Lucknow, Uttar Pradesh, India</span>
           </div>
         </div>
 
