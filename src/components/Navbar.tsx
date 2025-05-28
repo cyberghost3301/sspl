@@ -26,9 +26,9 @@ const Navbar: React.FC<NavbarProps> = ({ companyName }) => {
 
         {/* Mobile Menu Button (Optional - for later implementation) */}
         <div className="md:hidden">
-          {/* <button className="text-white text-2xl focus:outline-none">
+          { <button className="text-white text-2xl focus:outline-none">
             &#9776; // Hamburger icon
-          </button> */}
+          </button> }
         </div>
       </div>
     </nav>
