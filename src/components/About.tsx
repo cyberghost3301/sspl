@@ -12,9 +12,12 @@ const About: React.FC = () => {
         {/* Section 1: Business Core */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16 md:mb-24">
           <div className="md:order-2"> {/* Image/Placeholder on right for desktop */}
-            <div className="bg-gray-200 h-64 md:h-96 rounded-lg flex items-center justify-center text-gray-500 text-lg font-semibold shadow-lg animate-[scaleIn_1s_ease-out_forwards_0.6s] opacity-0">
-              [Placeholder: Image - Diversified Tech Solutions]
-            </div>
+            {/* Replaced placeholder div with img tag */}
+            <img
+              src="/about-us-1.png" // Path to your image in the public folder
+              alt="Illustration of diversified technology solutions offered by SSPL" // Descriptive alt text
+              className="h-64 md:h-96 rounded-lg shadow-lg object-cover w-full animate-[scaleIn_1s_ease-out_forwards_0.6s] opacity-0"
+            />
           </div>
           <div className="md:order-1 text-center md:text-left animate-[slideInLeft_1s_ease-out_forwards_0.8s] opacity-0">
             <h3 className="text-3xl font-semibold text-indigo-600 mb-4">Your Trusted Technology Partner</h3>
@@ -24,7 +27,8 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Section 2: Core Activities & Specializations (Detailed) */}
+        {/* Section 2: Core Activities & Specializations (Detailed) - This section was commented out in your original code */}
+        {/* If you want to uncomment and use this section, you'll need to add images or content here later */}
         <div className="mb-16 md:mb-24 animate-[fadeIn_1s_ease-out_forwards_1s] opacity-0">
           <h3 className="text-3xl font-semibold text-indigo-600 mb-8 text-center">Our Expertise & Offerings</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -79,10 +83,12 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="md:order-2 animate-[scaleIn_1s_ease-out_forwards_1.4s] opacity-0">
-            {/* Placeholder for an image or illustration related to custom solutions/teamwork */}
-            <div className="bg-gray-200 h-64 md:h-96 rounded-lg flex items-center justify-center text-gray-500 text-lg font-semibold shadow-lg">
-              [Placeholder: Image - Customization & Teamwork]
-            </div>
+            {/* Replaced placeholder div with img tag */}
+            <img
+              src="/about-us-1.png" // Path to your image in the public folder
+              alt="Illustration of customized solutions and scalable teamwork at SSPL" // Descriptive alt text
+              className="h-64 md:h-96 rounded-lg shadow-lg object-cover w-full"
+            />
           </div>
         </div>
 
