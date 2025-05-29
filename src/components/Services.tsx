@@ -1,6 +1,6 @@
 // src/components/Services.tsx
 import React from 'react';
-import { FaLaptopCode, FaCloud, FaShieldAlt, FaHome, FaSolarPanel, FaVideo, FaWifi, FaMobileAlt, FaTools } from 'react-icons/fa'; // Import specific icons
+import { FaLaptopCode, FaCloud, FaShieldAlt, FaHome, FaSolarPanel, FaVideo, FaWifi, FaMobileAlt, FaTools, FaHandsHelping } from 'react-icons/fa'; // Import specific icons, added FaHandsHelping
 
 interface ServiceItem {
   icon: React.ElementType; // Type for React Icon component
@@ -48,6 +48,12 @@ const servicesData: ServiceItem[] = [
     icon: FaTools,
     title: "Customized & Niche Solutions",
     description: "Highly tailored services in surveillance, home automation, motorized systems, custom PC builds, and premium solar projects.",
+  },
+  // --- NEW 9TH SERVICE ITEM ---
+  {
+    icon: FaHandsHelping, // Using FaHandsHelping for consulting/support
+    title: "IT Consulting & Business Solutions",
+    description: "Strategic IT consulting, system integration, and tailored business solutions to optimize operations and drive technological growth.",
   },
 ];
 
