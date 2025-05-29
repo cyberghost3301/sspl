@@ -1,6 +1,6 @@
 // src/components/Services.tsx
 import React from 'react';
-import { FaLaptopCode, FaCloud, FaShieldAlt, FaHome, FaSolarPanel, FaVideo, FaWifi, FaMobileAlt, FaTools, FaHandsHelping } from 'react-icons/fa'; // Import specific icons, added FaHandsHelping
+import { FaLaptopCode, FaCloud, FaShieldAlt, FaHome, FaSolarPanel, FaVideo, FaWifi, FaMobileAlt, FaTools, FaHandsHelping } from 'react-icons/fa'; // Import specific icons
 
 interface ServiceItem {
   icon: React.ElementType; // Type for React Icon component
@@ -49,7 +49,6 @@ const servicesData: ServiceItem[] = [
     title: "Customized & Niche Solutions",
     description: "Highly tailored services in surveillance, home automation, motorized systems, custom PC builds, and premium solar projects.",
   },
-  // --- NEW 9TH SERVICE ITEM ---
   {
     icon: FaHandsHelping, // Using FaHandsHelping for consulting/support
     title: "IT Consulting & Business Solutions",
@@ -73,10 +72,10 @@ const Services: React.FC = () => {
           {servicesData.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col items-center text-center"
+              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col items-center text-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
             >
               <service.icon className="text-5xl text-indigo-600 mb-6" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3> {/* This line is now complete */}
               <p className="text-md text-gray-700 leading-relaxed">{service.description}</p>
             </div>
           ))}

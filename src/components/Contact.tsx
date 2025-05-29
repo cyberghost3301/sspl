@@ -32,11 +32,10 @@ const Contact: React.FC = () => {
           {/* Address */}
           <div className="flex items-center space-x-3 animate-[slideInRight_1s_ease-out_forwards_1.5s] opacity-0">
             <FaMapMarkerAlt className="text-3xl" />
-            {/* Changed span to a, added href for Google Maps, and added hover:underline for consistency */}
             <a
-              href="http://google.com/maps/search/Puraniya+Railway+Crossing,+Aliganj,+Lucknow,+Uttar+Pradesh,+India"
-              target="_blank" // Opens in a new tab
-              rel="noopener noreferrer" // Security best practice for target="_blank"
+              href="https://www.google.com/maps/search/Lucknow,+Uttar+Pradesh,+India"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-xl md:text-2xl hover:underline whitespace-nowrap"
             >
               Lucknow, Uttar Pradesh, India

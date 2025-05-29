@@ -1,3 +1,4 @@
+// src/components/Hero.tsx
 import React from 'react';
 
 interface HeroProps {
@@ -8,7 +9,8 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ tagline, motto, callToAction }) => {
   return (
-    <section className="relative h-screen w-full flex items-center justify-center text-center bg-gradient-to-r from-blue-600 to-indigo-700 text-white overflow-hidden p-4">
+    // Added dynamic padding-top directly to the section to clear the fixed Navbar
+    <section className="relative h-screen w-full flex items-center justify-center text-center bg-gradient-to-r from-blue-600 to-indigo-700 text-white overflow-hidden p-4 pt-16 md:pt-20">
       {/* Background overlay for visual effect */}
       <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
 
