@@ -24,6 +24,17 @@
   to { opacity: 1; transform: scale(1); }
 }
 
+/* --- Image Protection Styles --- */
+.unstealable-image {
+  /* This prevents right-clicks, drag-and-drop, and selection on the image itself */
+  pointer-events: none;
+  /* Disable user selection (for text, but can help with images too) */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+  user-select: none;         /* Standard */
+}
+
 /* Global base styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* You can pick a Google Font later */

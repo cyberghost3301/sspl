@@ -38,7 +38,8 @@ const Team: React.FC = () => {
               <img
                 src={member.imageSrc} // This now uses the imported image
                 alt={`Profile of ${member.name}`}
-                className="w-48 h-48 rounded-full object-cover shadow-md mb-6"
+                // --- MODIFIED: Added unstealable-image to all team member images ---
+                className="w-48 h-48 rounded-full object-cover shadow-md mb-6 unstealable-image"
               />
               <h3 className="text-2xl font-bold text-gray-900 mb-2">{member.name}</h3>
               <p className="text-gray-600">{member.title}</p>
