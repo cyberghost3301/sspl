@@ -24,16 +24,45 @@
   to { opacity: 1; transform: scale(1); }
 }
 
-/* --- Image Protection Styles --- */
+/* --- Image Protection Styles (Combined) --- */
+/* The unstealable-image class remains on the img tag */
 .unstealable-image {
-  /* This prevents right-clicks, drag-and-drop, and selection on the image itself */
-  pointer-events: none;
-  /* Disable user selection (for text, but can help with images too) */
+  pointer-events: none; /* Prevents all mouse interactions on the img tag */
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none;    /* Firefox */
   -ms-user-select: none;     /* Internet Explorer/Edge */
   user-select: none;         /* Standard */
 }
+
+/* New styles for the overlay protection */
+.image-wrapper {
+  position: relative; /* Essential for positioning the overlay */
+  /* Ensures the wrapper takes the same size as the image */
+  width: 12rem; /* Matches w-48 (12 * 16px) */
+  height: 12rem; /* Matches h-48 (12 * 16px) */
+  margin-bottom: 1.5rem; /* Matches mb-6 */
+  /* Apply other image styles like rounded-full and shadow to the wrapper too if desired,
+     or directly apply them to the image only as currently done. */
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent; /* It's invisible */
+  z-index: 10; /* Make sure it's above the image */
+  /* This ensures the overlay *receives* pointer events */
+  pointer-events: auto;
+  /* Disable user selection on the overlay too */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default; /* Optional: Sets cursor to default when hovering over the overlay */
+}
+
 
 /* Global base styles */
 body {

@@ -35,12 +35,16 @@ const Team: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 animate-[fadeIn_1.5s_ease-out_forwards_0.6s] opacity-0">
           {teamMembers.map((member, index) => (
             <div key={index} className="flex flex-col items-center text-center">
-              <img
-                src={member.imageSrc} // This now uses the imported image
-                alt={`Profile of ${member.name}`}
-                // --- MODIFIED: Added unstealable-image to all team member images ---
-                className="w-48 h-48 rounded-full object-cover shadow-md mb-6 unstealable-image"
-              />
+              {/* --- MODIFIED: Added image-wrapper and image-overlay --- */}
+              <div className="relative image-wrapper">
+                <img
+                  src={member.imageSrc}
+                  alt={`Profile of ${member.name}`}
+                  className="w-48 h-48 rounded-full object-cover shadow-md mb-6 unstealable-image" // Keep the unstealable-image class
+                />
+                <div className="image-overlay"></div> {/* This is the transparent layer */}
+              </div>
+              {/* --- END MODIFIED --- */}
               <h3 className="text-2xl font-bold text-gray-900 mb-2">{member.name}</h3>
               <p className="text-gray-600">{member.title}</p>
             </div>
