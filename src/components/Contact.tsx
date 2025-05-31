@@ -106,10 +106,10 @@ const Contact: React.FC = () => {
           </div>
         </div>
 
-        {/* Your functional Contact Form, integrated into the placeholder div's style */}
-        <div className="mt-16 bg-white bg-opacity-10 p-8 rounded-lg shadow-inner animate-[scaleIn_1s_ease-out_forwards_1.8s] opacity-0 text-left"> {/* Added text-left for form labels */}
-          <p className="text-xl font-semibold mb-4">Have a specific query?</p>
-          <p className="text-md mb-6">
+        {/* Your functional Contact Form - NOW WITH SOLID WHITE BACKGROUND */}
+        <div className="mt-16 bg-white p-8 rounded-lg shadow-md animate-[scaleIn_1s_ease-out_forwards_1.8s] opacity-0 text-left">
+          <p className="text-xl font-semibold mb-4 text-gray-800">Have a specific query?</p>
+          <p className="text-md mb-6 text-gray-700">
             Please use the form below to send us a message.
           </p>
           
