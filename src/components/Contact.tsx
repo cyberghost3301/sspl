@@ -1,9 +1,8 @@
 // src/components/Contact.tsx
-import React, { useState } from 'react'; // Import useState for form state management
+import React, { useState } from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Contact: React.FC = () => {
-  // State to hold form data
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -11,7 +10,6 @@ const Contact: React.FC = () => {
     message: '',
   });
 
-  // Handle input changes
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -20,38 +18,33 @@ const Contact: React.FC = () => {
     }));
   };
 
-  // Handle form submission
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent default browser form submission
 
-    // FOR DEMONSTRATION: Log form data to console
-    console.log('Form submitted:', formData);
+    // --- UPDATED: Use your deployed backend URL here ---
+    const backendUrl = 'https://sspl-be.onrender.com';
 
-    // In a real application, you would send this data to a backend or a third-party service.
-    // Example using fetch (requires a server endpoint):
-    /*
-    fetch('/api/contact', { // Replace with your actual API endpoint
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-      alert('Your message has been sent!');
-      setFormData({ name: '', email: '', subject: '', message: '' }); // Clear form
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-      alert('There was an error sending your message.');
-    });
-    */
+    try {
+      const response = await fetch(`${backendUrl}/api/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData), // Convert your form data to JSON
+      });
 
-    // For now, let's just clear the form after logging
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    alert('Message sent successfully! (Check console for data, actual sending requires backend)');
+      if (response.ok) {
+        const result = await response.json();
+        alert(result.message || 'Message sent successfully!');
+        setFormData({ name: '', email: '', subject: '', message: '' }); // Clear form
+      } else {
+        const errorData = await response.json();
+        alert(errorData.message || 'Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Network error or server unreachable:', error);
+      alert('Could not connect to the server. Please check your internet connection or try again later.');
+    }
   };
 
   return (
@@ -65,8 +58,7 @@ const Contact: React.FC = () => {
           Ready to transform your ideas into scalable solutions? Contact SSPL today for expert advice and seamless execution.
         </p>
 
-        <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12 mb-16"> {/* Added mb-16 for space before form */}
-          {/* Phone Number */}
+        <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12 mb-16">
           <div className="flex items-center space-x-3 animate-[slideInLeft_1s_ease-out_forwards_0.9s] opacity-0">
             <FaPhone className="text-3xl" />
             <a href="tel:+917651882563" className="text-xl md:text-2xl hover:underline whitespace-nowrap">
@@ -74,13 +66,11 @@ const Contact: React.FC = () => {
             </a>
           </div>
 
-          {/* Email Address */}
           <div className="flex items-center space-x-3 animate-[fadeIn_1s_ease-out_forwards_1.2s] opacity-0">
             <FaEnvelope className="text-3xl" />
             <a href="mailto:info@sspl.pcmechanix.in" className="text-xl md:text-2xl hover:underline">info@sspl.pcmechanix.in</a>
           </div>
 
-          {/* Address */}
           <div className="flex items-center space-x-3 animate-[slideInRight_1s_ease-out_forwards_1.5s] opacity-0">
             <FaMapMarkerAlt className="text-3xl" />
             <a
@@ -94,7 +84,6 @@ const Contact: React.FC = () => {
           </div>
         </div>
 
-        {/* Contact Form */}
         <div className="bg-white bg-opacity-10 p-8 rounded-lg shadow-inner animate-[scaleIn_1s_ease-out_forwards_1.8s] opacity-0 text-left">
           <h3 className="text-3xl font-semibold mb-6 text-center">Send Us a Message</h3>
           <form onSubmit={handleSubmit} className="space-y-6">
