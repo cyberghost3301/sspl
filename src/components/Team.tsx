@@ -34,7 +34,13 @@ const Team: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 animate-[fadeIn_1.5s_ease-out_forwards_0.6s] opacity-0">
           {teamMembers.map((member, index) => (
-            <div key={index} className="flex flex-col items-center text-center">
+            // ADDED CARD STYLING AND HOVER EFFECTS TO THIS DIV
+            <div 
+              key={index} 
+              className="bg-gray-50 p-8 rounded-lg shadow-md flex flex-col items-center text-center
+                         transform-gpu transition-all duration-300
+                         hover:scale-105 hover:shadow-xl cursor-pointer" // Hover effects added here
+            >
               {/* Added image-wrapper for transparent overlay protection */}
               <div className="relative image-wrapper">
                 <img

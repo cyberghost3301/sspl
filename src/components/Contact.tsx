@@ -167,8 +167,7 @@ const Contact: React.FC = () => {
             <div className="flex items-center justify-between">
               <button
                 type="submit"
-                // UPDATED CLASSNAME FOR BUTTON
-                className="bg-blue-600 hover:scale-105 hover:shadow-lg text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-all duration-300"
+                className="bg-blue-600 hover:scale-105 hover:shadow-lg text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-all duration-300 transform-gpu"
                 disabled={loading}
               >
                 {loading ? 'Sending...' : 'Send Message'}
