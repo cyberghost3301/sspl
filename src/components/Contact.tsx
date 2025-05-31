@@ -62,19 +62,16 @@ const Contact: React.FC = () => {
   };
 
   return (
-    // Section styling matching your "older copy"
     <section id="contact" className="py-16 md:py-24 bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-4">
       <div className="max-w-4xl mx-auto text-center">
-        {/* Heading and descriptive paragraph from your "older copy" */}
         <h2 className="text-4xl md:text-5xl font-bold mb-12 animate-[fadeIn_1s_ease-out_forwards_0.3s] opacity-0">
           Get in Touch
         </h2>
 
         <p className="text-lg md:text-xl leading-relaxed mb-10 animate-[fadeIn_1s_ease-out_forwards_0.6s] opacity-0">
-          Ready to transform your ideas into scalable solutions? Contact SSPL today for expert advice and seamless execution.
+          Ready to transform your ideas into scalable solutions? Contact Spirecrest today for expert advice and seamless execution.
         </p>
 
-        {/* Contact details layout from your "older copy", with updated info */}
         <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12">
           {/* Phone Number */}
           <div className="flex items-center space-x-3 animate-[slideInLeft_1s_ease-out_forwards_0.9s] opacity-0">
@@ -170,7 +167,8 @@ const Contact: React.FC = () => {
             <div className="flex items-center justify-between">
               <button
                 type="submit"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300"
+                // UPDATED CLASSNAME FOR BUTTON
+                className="bg-blue-600 hover:scale-105 hover:shadow-lg text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-all duration-300"
                 disabled={loading}
               >
                 {loading ? 'Sending...' : 'Send Message'}

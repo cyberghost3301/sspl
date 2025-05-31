@@ -1,5 +1,5 @@
 // src/components/Navbar.tsx
-import React, { useState, useEffect } from 'react'; // Import useState and useEffect
+import React, { useState } from 'react'; // Only useState is needed now
 
 interface NavbarProps {
   companyName: string;
@@ -7,8 +7,6 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ companyName }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isNavbarVisible, setIsNavbarVisible] = useState(true); // State for navbar visibility
-  const [lastScrollY, setLastScrollY] = useState(0); // State to track last scroll position
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -18,30 +16,12 @@ const Navbar: React.FC<NavbarProps> = ({ companyName }) => {
     setIsMenuOpen(false);
   };
 
-  // Function to handle scroll for smart navbar behavior
-  const handleScroll = () => {
-    // Logic to show/hide navbar based on scroll direction
-    if (window.scrollY < 100) { // Always show navbar if near the top (e.g., within 100px of scroll top)
-      setIsNavbarVisible(true);
-    } else if (window.scrollY > lastScrollY && window.scrollY > 150) { // Scrolling down and past an initial offset
-      setIsNavbarVisible(false);
-    } else if (window.scrollY < lastScrollY) { // Scrolling up
-      setIsNavbarVisible(true);
-    }
-    setLastScrollY(window.scrollY); // Update last scroll position
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [lastScrollY]); // Dependency array: re-run effect if lastScrollY changes
+  // Removed: isNavbarVisible state, lastScrollY state, handleScroll function, and useEffect for scroll behavior.
+  // The navbar will now always be visible when fixed.
 
   return (
-    <nav className={`bg-gray-900 text-white p-4 md:p-6 shadow-lg fixed w-full z-50 top-0 left-0
-                    transition-transform duration-300 ease-in-out
-                    ${isNavbarVisible ? 'translate-y-0' : '-translate-y-full'}`}> {/* Dynamic class for hide/show */}
+    // Navbar is fixed at the top, but without the dynamic transform/visibility classes.
+    <nav className="bg-gray-900 text-white p-4 md:p-6 shadow-lg fixed w-full z-50 top-0 left-0"> 
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Company Logo/Name */}
         <a href="#home" className="text-2xl md:text-3xl font-extrabold text-blue-400 hover:text-blue-300 transition-colors duration-300" onClick={closeMenu}>
