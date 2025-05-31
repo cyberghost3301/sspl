@@ -5,7 +5,7 @@ const Contact: React.FC = () => {
   // IMPORTANT: PASTE YOUR ACTUAL VERCELL BACKEND URL HERE!
   // ENSURE THERE IS NO TRAILING SLASH AT THE END OF THE URL.
   // Example: 'https://sspl-be-your-unique-id.vercel.app' (NO slash after .app)
-  const backendUrl = 'https://sspl-be.vercel.app'; // <--- MAKE SURE YOUR PASTE DOES NOT HAVE A TRAILING SLASH!
+  const backendUrl = 'https://sspl-backend.vercel.app'; // <--- MAKE SURE YOUR PASTE DOES NOT HAVE A TRAILING SLASH!
 
   const [formData, setFormData] = useState({
     name: '',
