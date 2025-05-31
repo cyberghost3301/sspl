@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 
 const Contact: React.FC = () => {
-  // IMPORTANT: REPLACE THIS PLACEHOLDER URL
-  // After you deploy your backend to Vercel, copy the URL Vercel gives you (e.g., https://your-backend-project-name.vercel.app)
-  // and paste it here. Your endpoint will then be this URL + /api/contact
-  const backendUrl = 'https://sspl-be.vercel.app/';
+  // IMPORTANT: PASTE YOUR ACTUAL VERCELL BACKEND URL HERE!
+  // ENSURE THERE IS NO TRAILING SLASH AT THE END OF THE URL.
+  // Example: 'https://sspl-be-your-unique-id.vercel.app' (NO slash after .app)
+  const backendUrl = 'https://sspl-be.vercel.app'; // <--- MAKE SURE YOUR PASTE DOES NOT HAVE A TRAILING SLASH!
 
   const [formData, setFormData] = useState({
     name: '',
@@ -29,6 +29,7 @@ const Contact: React.FC = () => {
     setIsError(false);
 
     try {
+      // The URL will now correctly be https://sspl-be.vercel.app/api/contact
       const response = await fetch(`${backendUrl}/api/contact`, {
         method: 'POST',
         headers: {
