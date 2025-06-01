@@ -1,41 +1,41 @@
 // src/App.tsx
-import React from 'react';
 import Navbar from './components/Navbar';
-import Contact from './components/Contact';
+import Hero from './components/Hero';
+import About from './components/About';
 import Services from './components/Services';
-import Team from './components/Team'; // Ensure Team is imported
+import Team from './components/Team';
+import Contact from './components/Contact';
+import { Footer } from './components/Footer';
+import Bttb from './components/Bttb'; // <--- Import your Bttb component
 
-function App() {
-  const companyName = "Spirecrest"; // Ensure this matches your company name
+const App = () => {
+  const ssplCompanyName = "SSPL";
+  const ssplTagline = "Smart Ideas. Solid Executions. Scalable Results.";
+  const ssplMotto = "Spot. Solve. Serve.";
+  const heroCallToAction = "Discover Our Solutions";
 
   return (
-    <div className="App">
-      <Navbar companyName={companyName} />
-      
-      <main className="pt-20"> {/* General padding-top for content below fixed Navbar */}
-        {/* Home Section - ADDED scroll-mt-24 */}
-        <section id="home" className="h-screen bg-blue-500 text-white flex items-center justify-center scroll-mt-24">
-          <h1 className="text-5xl font-bold">Welcome to {companyName}</h1>
-        </section>
+    <div className="min-h-screen bg-gray-50 font-sans text-gray-800">
+      {/* Navigation Bar */}
+      <Navbar companyName={ssplCompanyName} />
 
-        {/* About Section - ADDED scroll-mt-24 */}
-        <section id="about" className="py-16 bg-gray-100 text-center scroll-mt-24">
-            <h2 className="text-3xl font-bold text-gray-800">About Us Placeholder</h2>
-            <p className="text-gray-600 mt-4">More content about your company will go here.</p>
-        </section>
+      {/* Hero Section */}
+      <div>
+        <Hero tagline={ssplTagline} motto={ssplMotto} callToAction={heroCallToAction} />
+      </div>
 
-        <Services /> {/* Your existing Services section, will be updated separately */}
+      {/* Other sections */}
+      <About />
+      <Services />
+      <Team />
+      <Contact />
 
-        <Team /> {/* Your existing Team section, will be updated separately */}
+      <Footer />
 
-        <Contact /> {/* Your existing Contact section, will be updated separately */}
-      </main>
-
-      <footer className="bg-gray-900 text-white py-8 text-center">
-        <p>&copy; {new Date().getFullYear()} {companyName}. All rights reserved.</p>
-      </footer>
+      {/* Back to Top Button */}
+      <Bttb /> {/* <--- Render the Bttb component here */}
     </div>
   );
-}
+};
 
 export default App;

@@ -58,8 +58,7 @@ const servicesData: ServiceItem[] = [
 
 const Services: React.FC = () => {
   return (
-    // Services Section - ADDED scroll-mt-24
-    <section id="services" className="py-16 md:py-24 bg-gray-100 text-gray-800 px-4 scroll-mt-24">
+    <section id="services" className="py-16 md:py-24 bg-gray-100 text-gray-800 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-12 text-center animate-[fadeIn_1s_ease-out_forwards_0.3s] opacity-0">
           Our Specializations & Services
@@ -76,7 +75,7 @@ const Services: React.FC = () => {
               className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col items-center text-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
             >
               <service.icon className="text-5xl text-indigo-600 mb-6" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3> {/* This line is now complete */}
               <p className="text-md text-gray-700 leading-relaxed">{service.description}</p>
             </div>
           ))}
