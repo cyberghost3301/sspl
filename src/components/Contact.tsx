@@ -62,7 +62,8 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-4">
+    // Contact Section - ADDED scroll-mt-24
+    <section id="contact" className="py-16 md:py-24 bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-4 scroll-mt-24">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 animate-[fadeIn_1s_ease-out_forwards_0.3s] opacity-0">
           Get in Touch
