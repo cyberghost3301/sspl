@@ -5,8 +5,9 @@ import About from './components/About';
 import Services from './components/Services';
 import Team from './components/Team';
 import Contact from './components/Contact';
-import { Footer } from './components/Footer';
-import Bttb from './components/Bttb'; // <--- Import your Bttb component
+import { Footer } from './components/Footer'; // Correct named import for Footer
+import Bttb from './components/Bttb';
+import Fcb from './components/Fcb'; // <--- New: Import Fcb component
 
 const App = () => {
   const ssplCompanyName = "SSPL";
@@ -20,7 +21,7 @@ const App = () => {
       <Navbar companyName={ssplCompanyName} />
 
       {/* Hero Section */}
-      <div>
+      <div> {/* This div might be removed if Hero itself is a section */}
         <Hero tagline={ssplTagline} motto={ssplMotto} callToAction={heroCallToAction} />
       </div>
 
@@ -32,8 +33,11 @@ const App = () => {
 
       <Footer />
 
+      {/* Floating Call-to-Action Buttons */}
+      <Fcb /> {/* <--- New: Render Fcb component here */}
+
       {/* Back to Top Button */}
-      <Bttb /> {/* <--- Render the Bttb component here */}
+      <Bttb />
     </div>
   );
 };
