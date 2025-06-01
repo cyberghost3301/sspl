@@ -37,10 +37,12 @@ const Bttb: React.FC = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transform hover:scale-110"
+          // p-3 for mobile, md:p-4 for desktop (for button padding)
+          className="bg-blue-600 hover:bg-blue-700 text-white p-3 md:p-4 rounded-full shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transform hover:scale-110"
           aria-label="Scroll to top" // Good for accessibility
         >
-          <FaArrowUp className="text-2xl" /> {/* Arrow icon */}
+          {/* text-2xl for mobile, md:text-3xl for desktop (for icon size) */}
+          <FaArrowUp className="text-2xl md:text-3xl" />
         </button>
       )}
     </div>
