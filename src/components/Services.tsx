@@ -1,6 +1,7 @@
 // src/components/Services.tsx
 import React from 'react';
-import { FaLaptopCode, FaCloud, FaShieldAlt, FaHome, FaSolarPanel, FaVideo, FaWifi, FaMobileAlt, FaTools, FaHandsHelping } from 'react-icons/fa'; // Import specific icons
+// Correctly imported icons as per your provided code
+import { FaLaptopCode, FaCloud, FaShieldAlt, FaHome, FaSolarPanel, FaVideo, FaWifi, FaMobileAlt, FaTools, FaHandsHelping } from 'react-icons/fa';
 
 interface ServiceItem {
   icon: React.ElementType; // Type for React Icon component
@@ -58,9 +59,10 @@ const servicesData: ServiceItem[] = [
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="py-16 md:py-24 bg-gray-100 text-gray-800 px-4">
+    // Changed to a strong blue gradient for the section background
+    <section id="services" className="py-16 md:py-24 bg-gradient-to-r from-blue-700 to-indigo-800 text-white px-4 scroll-mt-24">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-12 text-center animate-[fadeIn_1s_ease-out_forwards_0.3s] opacity-0">
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center animate-[fadeIn_1s_ease-out_forwards_0.3s] opacity-0">
           Our Specializations & Services
         </h2>
 
@@ -72,10 +74,17 @@ const Services: React.FC = () => {
           {servicesData.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col items-center text-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+              // Cards remain white to stand out against the dark section background
+              className="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col items-center text-center focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-75"
             >
-              <service.icon className="text-5xl text-indigo-600 mb-6" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3> {/* This line is now complete */}
+              {/* Prominent icon styling with a colored background circle */}
+              <div className="flex justify-center mb-6">
+                <div className="bg-blue-100 text-blue-600 p-5 rounded-full text-5xl flex items-center justify-center shadow-md">
+                  <service.icon />
+                </div>
+              </div>
+              {/* Text color for card titles and descriptions remain dark as cards are white */}
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3>
               <p className="text-md text-gray-700 leading-relaxed">{service.description}</p>
             </div>
           ))}

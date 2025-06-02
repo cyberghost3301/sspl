@@ -26,7 +26,8 @@ const teamMembers: TeamMember[] = [
 
 const Team: React.FC = () => {
   return (
-    <section id="team" className="py-16 md:py-24 bg-white text-gray-800 px-4">
+    // Changed section background to bg-gray-50 for a subtle grey tone, added scroll-mt-24
+    <section id="team" className="py-16 md:py-24 bg-gray-50 text-gray-800 px-4 scroll-mt-24">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-12 text-center animate-[fadeIn_1s_ease-out_forwards_0.3s] opacity-0">
           Our Leadership
@@ -35,9 +36,9 @@ const Team: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 animate-[fadeIn_1.5s_ease-out_forwards_0.6s] opacity-0">
           {teamMembers.map((member, index) => (
             // ADDED CARD STYLING AND HOVER EFFECTS TO THIS DIV
-            <div 
-              key={index} 
-              className="bg-gray-50 p-8 rounded-lg shadow-md flex flex-col items-center text-center
+            <div
+              key={index}
+              className="bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center
                          transform-gpu transition-all duration-300
                          hover:scale-105 hover:shadow-xl cursor-pointer" // Hover effects added here
             >
