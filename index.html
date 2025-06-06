@@ -10,7 +10,20 @@
     <meta property="og:title" content="SSPL - Smart Ideas. Solid Executions. Scalable Results.">
     <meta property="og:description" content="SSPL is a diversified technology solutions provider in Lucknow, Uttar Pradesh, specializing in computers, surveillance systems, networking, cloud, IoT, smart home automation, solar, and custom studio builds. Serving consumers and businesses nationwide.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.your-sspl-website.com/"> </head>
+    <meta property="og:url" content="https://www.sspli.vercel.app/">
+
+    <!-- ADDED: Content Security Policy Meta Tag -->
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.googleapis.com https://maps.gstatic.com;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://maps.googleapis.com https://maps.gstatic.com;
+      img-src 'self' data: https://maps.googleapis.com https://maps.gstatic.com *.gstatic.com;
+      connect-src 'self' https://maps.googleapis.com https://maps.gstatic.com;
+      frame-src 'self' https://maps.google.com https://www.google.com/maps/;
+    ">
+    <!-- END ADDED: Content Security Policy Meta Tag -->
+
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

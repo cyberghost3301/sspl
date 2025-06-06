@@ -90,7 +90,7 @@ const Contact: React.FC = () => {
                 <div className="flex items-center space-x-4">
                     <FaMapMarkerAlt className="text-4xl text-blue-300" />
                     <a
-                        href="https://maps.google.com/?cid=10650092316558592999" 
+                        href="https://maps.google.com/?cid=10650092316558592999" // Reverting to the URL that was working previously
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-2xl hover:underline whitespace-nowrap font-semibold"
@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
 
             <div className="w-full h-80 md:h-full md:min-h-[400px] rounded-lg overflow-hidden shadow-xl animate-[scaleIn_1s_ease-out_forwards_1.2s] opacity-0">
               <iframe
-                src="https://maps.google.com/?cid=10650092316558592999" 
+                src="https://maps.google.com/?cid=10650092316558592999" // Reverting to the URL that was working previously
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -150,7 +150,6 @@ const Contact: React.FC = () => {
                   required
                 />
               </div>
-              {/* Subject Dropdown - REPLACED input with select */}
               <div className="mb-4">
                 <label htmlFor="subject" className="block text-gray-700 text-sm font-bold mb-2">Subject</label>
                 <select
@@ -161,10 +160,10 @@ const Contact: React.FC = () => {
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   required
                 >
-                  <option value="" disabled>Select a Subject</option> {/* Default disabled option */}
+                  <option value="" disabled>Select a Subject</option>
                   <option value="General Inquiry">General Inquiry</option>
                   <option value="Service Request">Service Request</option>
-                  <option value="Job Opportunities">Job Opportunity</option>
+                  <option value="Job Opportunities">Job Opportunities</option> {/* ADDED: Job Opportunities option */}
                   <option value="Partnership Opportunity">Partnership Opportunity</option>
                   <option value="Technical Support">Technical Support</option>
                   <option value="Feedback / Suggestion">Feedback / Suggestion</option>
