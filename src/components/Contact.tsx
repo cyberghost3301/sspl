@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: '',
+    subject: '', // This will now hold the selected option
     message: '',
   });
 
@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
   const [message, setMessage] = useState<string | null>(null);
   const [isError, setIsError] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => { // Added HTMLSelectElement to type
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -40,11 +40,11 @@ const Contact: React.FC = () => {
         const data = await response.json();
         setMessage(data.message);
         setIsError(false);
-        // Clear form after successful submission
+        // Clear form after successful submission and reset subject to default
         setFormData({
           name: '',
           email: '',
-          subject: '',
+          subject: 'General Inquiry', // Reset to a default value for the dropdown
           message: '',
         });
       } else {
@@ -62,9 +62,8 @@ const Contact: React.FC = () => {
   };
 
   return (
-    // Added scroll-mt-24 for Navbar offset
     <section id="contact" className="py-16 md:py-24 bg-gradient-to-r from-blue-700 to-indigo-800 text-white px-4 scroll-mt-24">
-      <div className="max-w-6xl mx-auto"> {/* Increased max-width for split layout */}
+      <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center animate-[fadeIn_1s_ease-out_forwards_0.3s] opacity-0">
           Get in Touch
         </h2>
@@ -73,58 +72,48 @@ const Contact: React.FC = () => {
           Ready to transform your ideas into scalable solutions? Contact SSPL today for expert advice and seamless execution.
         </p>
 
-        {/* New Split Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10"> {/* Gap adjusted for better spacing */}
-          {/* Left Column: Contact Info & Map */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
           <div className="flex flex-col space-y-8 md:space-y-12 items-center md:items-start text-center md:text-left">
-            {/* Contact Information */}
             <div className="space-y-6 animate-[slideInLeft_1s_ease-out_forwards_0.9s] opacity-0">
-                {/* Phone Number */}
                 <div className="flex items-center space-x-4">
                     <FaPhone className="text-4xl text-blue-300" />
                     <a href="tel:+917651882563" className="text-2xl hover:underline whitespace-nowrap font-semibold">
                         +91 7651882563
                     </a>
                 </div>
-
-                {/* Email Address */}
                 <div className="flex items-center space-x-4">
                     <FaEnvelope className="text-4xl text-blue-300" />
                     <a href="mailto:query@spirecrest.in" className="text-2xl hover:underline font-semibold">
                         query@spirecrest.in
                     </a>
                 </div>
-
-                {/* Address */}
                 <div className="flex items-center space-x-4">
                     <FaMapMarkerAlt className="text-4xl text-blue-300" />
                     <a
-                        href="https://maps.app.goo.gl/fcaYEN94xnGXSHHB6" // Corrected Google Maps URL for Lucknow
+                        href="https://maps.google.com/?cid=10650092316558592999" 
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-2xl hover:underline"
+                        className="text-2xl hover:underline whitespace-nowrap font-semibold"
                     >
                         Lucknow, Uttar Pradesh, India
                     </a>
                 </div>
             </div>
 
-            {/* Google Map Embedding */}
             <div className="w-full h-80 md:h-full md:min-h-[400px] rounded-lg overflow-hidden shadow-xl animate-[scaleIn_1s_ease-out_forwards_1.2s] opacity-0">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113941.7601931343!2d80.85244585145717!3d26.848600862215684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f3ce7b3%3A0xc3b8a36c03d6d027!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                src="https://maps.google.com/?cid=10650092316558592999" 
                 width="100%"
-                height="100%" // Ensure iframe fills its container
+                height="100%"
                 style={{ border: 0 }}
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Google Map of Lucknow"
+                title="SSPL Location"
               ></iframe>
             </div>
           </div>
 
-          {/* Right Column: Contact Form */}
           <div className="bg-white p-8 rounded-lg shadow-xl animate-[scaleIn_1s_ease-out_forwards_1.5s] opacity-0 text-left">
             <p className="text-xl font-semibold mb-4 text-gray-800">Have a specific query?</p>
             <p className="text-md mb-6 text-gray-700">
@@ -161,17 +150,26 @@ const Contact: React.FC = () => {
                   required
                 />
               </div>
+              {/* Subject Dropdown - REPLACED input with select */}
               <div className="mb-4">
                 <label htmlFor="subject" className="block text-gray-700 text-sm font-bold mb-2">Subject</label>
-                <input
-                  type="text"
+                <select
                   id="subject"
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   required
-                />
+                >
+                  <option value="" disabled>Select a Subject</option> {/* Default disabled option */}
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Service Request">Service Request</option>
+                  <option value="Job Opportunities">Job Opportunity</option>
+                  <option value="Partnership Opportunity">Partnership Opportunity</option>
+                  <option value="Technical Support">Technical Support</option>
+                  <option value="Feedback / Suggestion">Feedback / Suggestion</option>
+                  <option value="Other">Other</option>
+                </select>
               </div>
               <div className="mb-6">
                 <label htmlFor="message" className="block text-gray-700 text-sm font-bold mb-2">Message</label>
