@@ -10,26 +10,28 @@ interface ServiceItem {
 }
 
 const servicesData: ServiceItem[] = [
-  {
-    icon: FaLaptopCode,
-    title: "Computer & Laptop Solutions",
-    description: "Sale, purchase, repair, and trading of all types of computers, laptops, and related hardware/software components.",
-  },
+  // REORDERED CARDS AS REQUESTED:
   {
     icon: FaShieldAlt,
     title: "Advanced Surveillance Systems",
     description: "Specializing in CCTV, biometric access control, attendance systems, X-ray baggage scanners, and metal detectors.",
   },
   {
-    icon: FaCloud,
-    title: "Networking & Cloud Solutions",
-    description: "Comprehensive services including networking setup, robust server installations, seamless cloud solutions, and IoT integrations.",
-  },
-  {
     icon: FaHome,
     title: "Smart Home & Office Automation",
     description: "Cutting-edge solutions like motorized curtain tracks, automatic pet feeders, and plant irrigation systems.",
   },
+  {
+    icon: FaLaptopCode,
+    title: "Computer & Laptop Solutions",
+    description: "Sale, purchase, repair, and trading of all types of computers, laptops, and related hardware/software components.",
+  },
+  {
+    icon: FaCloud,
+    title: "Networking & Cloud Solutions",
+    description: "Comprehensive services including networking setup, robust server installations, seamless cloud solutions, and IoT integrations.",
+  },
+  // REST OF THE CARDS REMAIN IN THEIR ORIGINAL ORDER:
   {
     icon: FaSolarPanel,
     title: "Solar Power Systems",
