@@ -1,7 +1,7 @@
 // src/components/Services.tsx
 import React from 'react';
 // Correctly imported icons as per your provided code
-import { FaLaptopCode, FaCloud, FaShieldAlt, FaHome, FaSolarPanel, FaVideo, FaWifi, FaMobileAlt, FaTools, FaHandsHelping } from 'react-icons/fa';
+import { FaLaptopCode, FaCloud, FaShieldAlt, FaHome, FaSolarPanel, FaVideo, FaMobileAlt, FaTools, FaHandsHelping } from 'react-icons/fa';
 
 interface ServiceItem {
   icon: React.ElementType; // Type for React Icon component
@@ -14,33 +14,33 @@ const servicesData: ServiceItem[] = [
   {
     icon: FaShieldAlt,
     title: "Advanced Surveillance Systems",
-    description: "Specializing in CCTV, biometric access control, attendance systems, X-ray baggage scanners, and metal detectors.",
+    description: "Specializing in CCTV, biometric access control, attendance systems, X-ray baggage scanners, walkie talkies, and go-through or handheld metal detectors.",
   },
   {
     icon: FaHome,
     title: "Smart Home & Office Automation",
-    description: "Cutting-edge solutions like motorized curtain tracks, automatic pet feeders, and plant irrigation systems.",
+    description: "Retro or Touch based smart switches, cutting-edge solutions like motorized curtain tracks, automatic pet feeders, and plant drip irrigation systems.",
   },
   {
     icon: FaLaptopCode,
     title: "Computer & Laptop Solutions",
-    description: "Sale, purchase, repair, and trading of all types of computers, laptops, and related hardware/software components.",
+    description: "Sale,Purchase, Repair, and Trading of all types of desktop, laptops, and related Hardware/Software components both Commercial or Residential.",
   },
   {
     icon: FaCloud,
     title: "Networking & Cloud Solutions",
-    description: "Comprehensive services including networking setup, robust server installations, seamless cloud solutions, and IoT integrations.",
+    description: "Comprehensive services including networking setup, robust data/computing server installations, seamless Cloud/Ml/AI solutions, and IoT integrations.",
   },
   // REST OF THE CARDS REMAIN IN THEIR ORIGINAL ORDER:
   {
     icon: FaSolarPanel,
     title: "Solar Power Systems",
-    description: "Complete project undertakings for efficient and sustainable solar power systems for homes and businesses.",
+    description: "Complete project undertakings for efficient and sustainable Grid Tied/Off Grid/Hybrid solar power systems for homes and businesses.",
   },
   {
     icon: FaVideo,
     title: "Audio Visual & Studio Setups",
-    description: "Hi-Fi audio systems, immersive home theatre installations, and custom YouTube/news/video recording studios.",
+    description: "Hi-Fi audio systems, immersive home theatre installations, and custom YouTube/News/Video/Podcast recording  studios.",
   },
   {
     icon: FaMobileAlt,
@@ -69,7 +69,7 @@ const Services: React.FC = () => {
         </h2>
 
         <p className="text-lg md:text-xl leading-relaxed mb-12 text-center max-w-3xl mx-auto animate-[fadeIn_1s_ease-out_forwards_0.6s] opacity-0">
-          At SSPL, we offer a diverse range of technology solutions, meticulously crafted to meet the evolving needs of both individual consumers and businesses nationwide.
+          At SPIRECREST SOLUTIONS PRIVATE LIMITED we offer a vastly diversified range of technology solutions, meticulously crafted to meet the evolving needs of both individual consumers and businesses nationwide.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 animate-[fadeIn_1.5s_ease-out_forwards_0.9s] opacity-0">
