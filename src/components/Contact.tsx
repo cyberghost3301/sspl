@@ -61,6 +61,8 @@ const Contact: React.FC = () => {
     }
   };
 
+  // Removed googleMapsApiKey, latitude, longitude as the provided embed code is self-contained.
+
   return (
     <section id="contact" className="py-16 md:py-24 bg-gradient-to-r from-blue-700 to-indigo-800 text-white px-4 scroll-mt-24">
       <div className="max-w-6xl mx-auto">
@@ -78,7 +80,7 @@ const Contact: React.FC = () => {
                 <div className="flex items-center space-x-4">
                     <FaPhone className="text-4xl text-blue-300" />
                     <a href="tel:+917651882563" className="text-2xl hover:underline whitespace-nowrap font-semibold">
-                        +91 76518 82563
+                        +91 7651882563
                     </a>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -90,7 +92,7 @@ const Contact: React.FC = () => {
                 <div className="flex items-center space-x-4">
                     <FaMapMarkerAlt className="text-4xl text-blue-300" />
                     <a
-                        href="https://maps.google.com/?cid=10650092316558592999" // Reverting to the URL that was working previously
+                        href="https://maps.app.goo.gl/AXeJGDw9scy7koxUA" // Updated hyperlink to the new embed URL
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-2xl hover:underline whitespace-nowrap font-semibold"
@@ -102,14 +104,15 @@ const Contact: React.FC = () => {
 
             <div className="w-full h-80 md:h-full md:min-h-[400px] rounded-lg overflow-hidden shadow-xl animate-[scaleIn_1s_ease-out_forwards_1.2s] opacity-0">
               <iframe
-                src="https://maps.google.com/?cid=10650092316558592999" // Reverting to the URL that was working previously
-                width="100%"
-                height="100%"
+                // EMBEDDING THE USER-PROVIDED IFRAME SRC
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2043.6692167976223!2d80.93735161344885!3d26.896056215823897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39995700648576c7%3A0x366cdaa68f963915!2sSPIRECREST%20SOLUTIONS%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1750092736012!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                width="100%" // Set to 100% for responsiveness
+                height="100%" // Set to 100% for responsiveness
                 style={{ border: 0 }}
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="SSPL Location"
+                title="Our Location" // Updated title for accessibility
               ></iframe>
             </div>
           </div>
@@ -163,7 +166,7 @@ const Contact: React.FC = () => {
                   <option value="" disabled>Select a Subject</option>
                   <option value="General Inquiry">General Inquiry</option>
                   <option value="Service Request">Service Request</option>
-                  <option value="Job Opportunities">Job Opportunities</option> {/* ADDED: Job Opportunities option */}
+                  <option value="Job Opportunities">Job Opportunities</option> 
                   <option value="Partnership Opportunity">Partnership Opportunity</option>
                   <option value="Technical Support">Technical Support</option>
                   <option value="Feedback / Suggestion">Feedback / Suggestion</option>
