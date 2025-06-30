@@ -69,7 +69,7 @@ const Services: React.FC = () => {
         </h2>
 
         <p className="text-lg md:text-xl leading-relaxed mb-12 text-center max-w-3xl mx-auto animate-[fadeIn_1s_ease-out_forwards_0.6s] opacity-0">
-          At SPIRECREST SOLUTIONS PRIVATE LIMITED we offer a vastly diversified range of technology solutions, meticulously crafted to meet the evolving needs of both individual consumers and businesses nationwide.
+          At SSPL we offer a vastly diversified range of technology solutions, meticulously crafted to meet the evolving needs of both individual consumers and businesses nationwide.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 animate-[fadeIn_1.5s_ease-out_forwards_0.9s] opacity-0">
