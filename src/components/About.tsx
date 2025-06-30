@@ -12,15 +12,18 @@ const About: React.FC = () => {
         {/* Combined Section: Your Trusted Technology Partner, Our Mission, and Scalability */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16 md:mb-24">
           <div className="md:order-2 animate-[scaleIn_1s_ease-out_forwards_0.6s] opacity-0">
-            {/* Using the image from the original first section */}
-            <img
-              src="/about-us-1.png" // Path to your image in the public folder
-              alt="Illustration representing SSPL's diverse technology solutions and adaptable team"
-              className="h-64 md:h-96 rounded-lg shadow-lg object-cover w-full"
-            />
+            {/* Added image-wrapper for transparent overlay protection, mimicking Team component */}
+            <div className="relative image-wrapper">
+              <img
+                src="/about-us-1.png" // Path to your image in the public folder
+                alt="Illustration representing SSPL's diverse technology solutions and adaptable team"
+                className="h-64 md:h-96 rounded-lg shadow-lg object-cover w-full unstealable-image" // Removed pointer-events-none, added unstealable-image
+              />
+              <div className="image-overlay"></div> {/* The transparent overlay */}
+            </div>
           </div>
           <div className="md:order-1 text-center md:text-left animate-[slideInLeft_1s_ease-out_forwards_0.8s] opacity-0">
-            <h3 className="text-3xl font-semibold text-indigo-600 mb-4">Your Trusted Technology Partner & Assorted Solutions Provider</h3>
+            <h3 className="text-3xl font-semibold text-indigo-600 mb-4">Renowned Assorted Solutions Provider</h3>
             <p className="text-lg leading-relaxed mb-4">
               Based in the heart of Lucknow, Uttar Pradesh, SPIRECREST SOLUTIONS PRIVATE LIMITED operates as a diversified technology solutions provider, serving individual consumers and businesses nationwide. Our mission is to deliver cutting-edge technology and unparalleled service right to your doorstep, or digitally, wherever you are.
             </p>
@@ -29,9 +32,6 @@ const About: React.FC = () => {
             </p>
           </div>
         </div>
-
-        {/* The "Our Expertise & Offerings" section has been completely removed from here,
-            as it is now part of your `src/components/Services.tsx` component. */}
 
       </div>
     </section>

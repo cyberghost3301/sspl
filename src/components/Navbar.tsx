@@ -20,12 +20,12 @@ const Navbar: React.FC<NavbarProps> = ({ companyName }) => {
     <nav className="bg-gray-900 text-white p-4 md:p-6 shadow-lg fixed w-full z-50 top-0 left-0"> 
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Company Logo/Name - REPLACED TEXT WITH IMAGE */}
-        <a href="#home" className="flex items-center" onClick={closeMenu}> {/* Added 'flex items-center' for vertical alignment if logo has padding */}
+        <a href="#home" className="flex items-center" onClick={closeMenu}> 
           {/* Use your logo from the public folder, named navbar-logo.png */}
           <img 
             src="/navbar-logo.png" 
             alt="SSPL Logo" 
-            className="h-10 md:h-12 w-auto object-contain" // Tailwind classes for sizing and aspect ratio
+            className="h-10 md:h-12 w-auto object-contain pointer-events-none" // ADDED pointer-events-none
           />
         </a>
 

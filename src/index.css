@@ -37,12 +37,11 @@
 /* New styles for the overlay protection */
 .image-wrapper {
   position: relative; /* Essential for positioning the overlay */
-  /* Ensures the wrapper takes the same size as the image */
-  width: 12rem; /* Matches w-48 (12 * 16px) */
-  height: 12rem; /* Matches h-48 (12 * 16px) */
-  margin-bottom: 1.5rem; /* Matches mb-6 */
-  /* Apply other image styles like rounded-full and shadow to the wrapper too if desired,
-     or directly apply them to the image only as currently done. */
+  /* REMOVED: width: 12rem; and height: 12rem; */
+  /* Added display: block to ensure it behaves like a block-level container */
+  display: block; 
+  /* If you had mb-6 on the image and want it on the wrapper for layout, move it here.
+     Based on your Team.tsx, the mb-6 is on the img, so we'll keep it there in About.tsx. */
 }
 
 .image-overlay {
