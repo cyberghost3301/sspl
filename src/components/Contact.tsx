@@ -85,8 +85,8 @@ const Contact: React.FC = () => {
                 </div>
                 <div className="flex items-center space-x-4">
                     <FaEnvelope className="text-4xl text-blue-300" />
-                    <a href="mailto:query@spirecrest.in" className="text-2xl hover:underline font-semibold">
-                        query@spirecrest.in
+                    <a href="mailto:info@spirecrest.in" className="text-2xl hover:underline font-semibold">
+                        info@spirecrest.in
                     </a>
                 </div>
                 <div className="flex items-center space-x-4">
