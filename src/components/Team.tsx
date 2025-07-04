@@ -4,6 +4,16 @@ import React from 'react';
 // Import your profile images directly from src/assets
 import aumProfile from '../assets/aum.jpg';
 import desheshProfile from '../assets/deshesh.jpg';
+import saurabhProfile from '../assets/saurabh.jpg';
+import laraibProfile from '../assets/laraib.jpg';
+import ishaProfile from '../assets/isha.jpg';
+import aakashProfile from '../assets/aakash.jpg';
+import shashankProfile from '../assets/shashank.jpg';
+import shristiProfile from '../assets/shristi.jpg';
+import akashProfile from '../assets/akash.jpg'
+import princeProfile from '../assets/prince.jpg'
+import anshumanProfile from '../assets/anshuman.jpg'
+import prachiProfile from '../assets/prachi.jpg'
 
 interface TeamMember {
   name: string;
@@ -22,6 +32,56 @@ const teamMembers: TeamMember[] = [
     title: 'Managing Director',
     imageSrc: desheshProfile, // Use the imported image variable
   },
+  {
+    name: 'Er. Saurabh Kumar Rao',
+    title: 'Strategic Advisor',
+    imageSrc: saurabhProfile, // Use the imported image variable
+  },
+  {
+    name: 'Ar. Laraib Ahmad',
+    title: 'Consulting Architect',
+    imageSrc: laraibProfile, // Use the imported image variable
+  },
+  {
+    name: 'Isha Aurora',
+    title: 'Market Insights Advisor',
+    imageSrc: ishaProfile, // Use the imported image variable
+  },
+  {
+    name: 'Aakash Srivastava',
+    title: 'External Consultant',
+    imageSrc: aakashProfile, // Use the imported image variable
+  },
+  {
+    name: 'Shashank Rao',
+    title: 'Project Collaborator',
+    imageSrc: shashankProfile, // Use the imported image variable
+  },
+  {
+    name: 'Shristi Singh',
+    title: 'Growth Facilitator',
+    imageSrc: shristiProfile, // Use the imported image variable
+  },
+  {
+    name: 'Akash Dixit',
+    title: 'Media Head',
+    imageSrc: akashProfile, // Use the imported image variable
+  },
+  {
+    name: 'Prince Rajput',
+    title: 'Tender & Bid Consultant',
+    imageSrc: princeProfile, // Use the imported image variable
+  },
+  {
+    name: 'Anshuman Singh',
+    title: 'Innovation Catalyst',
+    imageSrc: anshumanProfile, // Use the imported image variable
+  },
+  {
+    name: 'Prachi Singh',
+    title: 'HR & PR',
+    imageSrc: prachiProfile, // Use the imported image variable
+  },
 ];
 
 const Team: React.FC = () => {
@@ -33,12 +93,13 @@ const Team: React.FC = () => {
           Our Leadership
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 animate-[fadeIn_1.5s_ease-out_forwards_0.6s] opacity-0">
+        {/* MODIFIED GRID LAYOUT FOR MORE COLUMNS ON LARGER SCREENS */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 animate-[fadeIn_1.5s_ease-out_forwards_0.6s] opacity-0">
           {teamMembers.map((member, index) => (
             // ADDED CARD STYLING AND HOVER EFFECTS TO THIS DIV
             <div
               key={index}
-              className="bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center
+              className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center
                          transform-gpu transition-all duration-300
                          hover:scale-105 hover:shadow-xl cursor-pointer" // Hover effects added here
             >
@@ -47,7 +108,7 @@ const Team: React.FC = () => {
                 <img
                   src={member.imageSrc}
                   alt={`Profile of ${member.name}`}
-                  className="w-48 h-48 rounded-full object-cover shadow-md mb-6 unstealable-image" // unstealable-image class is here
+                  className="w-40 h-40 rounded-full object-cover shadow-md mb-6 unstealable-image" // Image size reduced here
                 />
                 <div className="image-overlay"></div> {/* The transparent overlay */}
               </div>
