@@ -9,10 +9,10 @@ import laraibProfile from '../assets/laraib.jpg';
 import ishaProfile from '../assets/isha.jpg';
 import aakashProfile from '../assets/aakash.jpg';
 import shashankProfile from '../assets/shashank.jpg';
+import anshumanProfile from '../assets/anshuman.jpg'
 import shristiProfile from '../assets/shristi.jpg';
 import akashProfile from '../assets/akash.jpg'
 import princeProfile from '../assets/prince.jpg'
-import anshumanProfile from '../assets/anshuman.jpg'
 import prachiProfile from '../assets/prachi.jpg'
 
 interface TeamMember {
@@ -58,6 +58,11 @@ const teamMembers: TeamMember[] = [
     imageSrc: shashankProfile, // Use the imported image variable
   },
   {
+    name: 'Anshuman Singh',
+    title: 'Innovation Catalyst',
+    imageSrc: anshumanProfile, // Use the imported image variable
+  },
+  {
     name: 'Shristi Singh',
     title: 'Growth Facilitator',
     imageSrc: shristiProfile, // Use the imported image variable
@@ -71,11 +76,6 @@ const teamMembers: TeamMember[] = [
     name: 'Prince Rajput',
     title: 'Tender & Bid Consultant',
     imageSrc: princeProfile, // Use the imported image variable
-  },
-  {
-    name: 'Anshuman Singh',
-    title: 'Innovation Catalyst',
-    imageSrc: anshumanProfile, // Use the imported image variable
   },
   {
     name: 'Prachi Singh',
