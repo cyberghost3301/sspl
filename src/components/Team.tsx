@@ -6,8 +6,8 @@ import aumProfile from '../assets/aum.jpg';
 import desheshProfile from '../assets/deshesh.jpg';
 import saurabhProfile from '../assets/saurabh.jpg';
 import laraibProfile from '../assets/laraib.jpg';
-import ishaProfile from '../assets/isha.jpg';
 import aakashProfile from '../assets/aakash.jpg';
+import ishaProfile from '../assets/isha.jpg';
 import shashankProfile from '../assets/shashank.jpg';
 import anshumanProfile from '../assets/anshuman.jpg'
 import shristiProfile from '../assets/shristi.jpg';
@@ -43,14 +43,14 @@ const teamMembers: TeamMember[] = [
     imageSrc: laraibProfile, // Use the imported image variable
   },
   {
-    name: 'Isha Aurora',
-    title: 'Market Insights Advisor',
-    imageSrc: ishaProfile, // Use the imported image variable
-  },
-  {
     name: 'Aakash Srivastava',
     title: 'External Consultant',
     imageSrc: aakashProfile, // Use the imported image variable
+  },
+  {
+    name: 'Isha Aurora',
+    title: 'Market Insights Advisor',
+    imageSrc: ishaProfile, // Use the imported image variable
   },
   {
     name: 'Shashank Rao',
