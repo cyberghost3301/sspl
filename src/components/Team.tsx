@@ -11,8 +11,12 @@ import ishaProfile from '../assets/isha.jpg';
 import shashankProfile from '../assets/shashank.jpg';
 import anshumanProfile from '../assets/anshuman.jpg'
 import shristiProfile from '../assets/shristi.jpg';
-import akashProfile from '../assets/akash.jpg'
-import princeProfile from '../assets/prince.jpg'
+import janviProfile from '../assets/janvi.jpg'
+import srishtiProfile from '../assets/srishti.jpg';
+import asthaProfile from '../assets/astha.jpg'
+import nabeelaProfile from '../assets/nabeela.jpg'
+import anushkaProfile from '../assets/anushka.jpg'
+import rushnaProfile from '../assets/rushna.jpg'
 import prachiProfile from '../assets/prachi.jpg'
 
 interface TeamMember {
@@ -33,7 +37,7 @@ const teamMembers: TeamMember[] = [
     imageSrc: desheshProfile, // Use the imported image variable
   },
   {
-    name: 'Er. Saurabh Kumar Rao',
+    name: 'Er. Saurabh Rao',
     title: 'Strategic Advisor',
     imageSrc: saurabhProfile, // Use the imported image variable
   },
@@ -68,18 +72,38 @@ const teamMembers: TeamMember[] = [
     imageSrc: shristiProfile, // Use the imported image variable
   },
   {
-    name: 'Akash Dixit',
-    title: 'Media Head',
-    imageSrc: akashProfile, // Use the imported image variable
+    name: 'Janvi Gautam',
+    title: 'Business Operations',
+    imageSrc: janviProfile, // Use the imported image variable
   },
   {
-    name: 'Prince Rajput',
-    title: 'Tender & Bid Consultant',
-    imageSrc: princeProfile, // Use the imported image variable
+    name: 'Srishti Saxena',
+    title: 'CRGO',
+    imageSrc: srishtiProfile, // Use the imported image variable
+  },
+  {
+    name: 'Astha Dwivedi',
+    title: 'Business Dev. Rep.',
+    imageSrc: asthaProfile, // Use the imported image variable
+  },
+  {
+    name: 'Er. Nabeela Jamil',
+    title: 'CPRO',
+    imageSrc: nabeelaProfile, // Use the imported image variable
+  },
+  {
+    name: 'Anushka Singh',
+    title: 'OPC',
+    imageSrc: anushkaProfile, // Use the imported image variable
+  },
+  {
+    name: 'Rushna Moin',
+    title: 'CRC',
+    imageSrc: rushnaProfile, // Use the imported image variable
   },
   {
     name: 'Prachi Singh',
-    title: 'HR & PR',
+    title: 'External HR',
     imageSrc: prachiProfile, // Use the imported image variable
   },
 ];
