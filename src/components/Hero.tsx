@@ -7,7 +7,7 @@ interface HeroProps {
   callToAction: string;
 }
 
-const Hero: React.FC<HeroProps> = ({ tagline, motto, callToAction }) => {
+const Hero: React.FC<HeroProps> = ({ callToAction }) => {
   const displayTagline = "Smart Ideas.<br/>Solid Executions.<br/>Scalable Results.";
   const newMotto = "Innovating for a Connected Tomorrow.";
 
