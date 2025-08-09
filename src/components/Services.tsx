@@ -1,7 +1,7 @@
 // src/components/Services.tsx
 import React from 'react';
 // Correctly imported icons as per your provided code
-import { FaLaptopCode, FaCloud, FaShieldAlt, FaHome, FaSolarPanel, FaVideo, FaMobileAlt, FaTools, FaHandsHelping } from 'react-icons/fa';
+import { FaLaptopCode, FaCloud, FaShieldAlt, FaHome, FaSolarPanel, FaVideo, FaMobileAlt, FaHandsHelping, FaDraftingCompass } from 'react-icons/fa';
 
 interface ServiceItem {
   icon: React.ElementType; // Type for React Icon component
@@ -47,15 +47,17 @@ const servicesData: ServiceItem[] = [
     title: "Web, App & Software Design",
     description: "Our digital wing handles custom web, mobile app, and software design across all major platforms.",
   },
-  {
-    icon: FaTools,
-    title: "Customized & Niche Solutions",
-    description: "Highly tailored services in surveillance, home automation, motorized systems, custom PC builds, and premium solar projects.",
-  },
+  // Replaced the old 8th item with the old 9th item
   {
     icon: FaHandsHelping, // Using FaHandsHelping for consulting/support
     title: "IT Consulting & Business Solutions",
     description: "Strategic IT consulting, system integration, and tailored business solutions to optimize operations and drive technological growth.",
+  },
+  // Added the new 9th item as requested
+  {
+    icon: FaDraftingCompass,
+    title: "Interior & Architecture Service",
+    description: "Holistic solutions for residential and commercial spaces, including full interior design, architectural planning, and project management to create functional, aesthetically pleasing environments.",
   },
 ];
 

@@ -28,7 +28,7 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     name: 'Aum Chatterjee',
-    title: 'Founding Director',
+    title: 'Executive Director',
     imageSrc: aumProfile, // Use the imported image variable
   },
   {
