@@ -24,7 +24,7 @@ const servicesData: ServiceItem[] = [
   {
     icon: FaLaptopCode,
     title: "Computer & Laptop Solutions",
-    description: "Sale,Purchase, Repair, and Trading of all types of desktop, laptops, and related Hardware/Software components both Commercial or Residential.",
+    description: "Trading and repair of all types of desktop, laptops, and related Hardware/Software components both Commercial or Residential.",
   },
   {
     icon: FaCloud,
@@ -35,12 +35,12 @@ const servicesData: ServiceItem[] = [
   {
     icon: FaSolarPanel,
     title: "Solar Power Systems",
-    description: "Complete project undertakings for efficient and sustainable Grid Tied/Off Grid/Hybrid solar power systems for homes and businesses.",
+    description: "Complete project undertakings for efficient and sustainable On-Grid/Off-Grid/Hybrid solar power systems for homes and businesses.",
   },
   {
     icon: FaVideo,
     title: "Audio Visual & Studio Setups",
-    description: "Hi-Fi audio systems, immersive home theatre installations, and custom YouTube/News/Video/Podcast recording  studios.",
+    description: "Hi-Fi audio systems, immersive home theatre installations, and custom YouTube/News/Video/Podcast recording studios.",
   },
   {
     icon: FaMobileAlt,
