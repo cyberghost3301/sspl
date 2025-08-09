@@ -17,7 +17,7 @@ import asthaProfile from '../assets/astha.jpg'
 import nabeelaProfile from '../assets/nabeela.jpg'
 import anushkaProfile from '../assets/anushka.jpg'
 import rushnaProfile from '../assets/rushna.jpg'
-import prachiProfile from '../assets/prachi.jpg'
+import rahulProfile from '../assets/rahul.jpg'
 
 interface TeamMember {
   name: string;
@@ -62,6 +62,11 @@ const teamMembers: TeamMember[] = [
     imageSrc: shashankProfile, // Use the imported image variable
   },
   {
+    name: 'Prof. R. R. Maurya',
+    title: 'External HR',
+    imageSrc: rahulProfile, // Use the imported image variable
+  },
+  {
     name: 'Anshuman Singh',
     title: 'Innovation Catalyst',
     imageSrc: anshumanProfile, // Use the imported image variable
@@ -100,11 +105,6 @@ const teamMembers: TeamMember[] = [
     name: 'Rushna Moin',
     title: 'CRC',
     imageSrc: rushnaProfile, // Use the imported image variable
-  },
-  {
-    name: 'Prachi Singh',
-    title: 'External HR',
-    imageSrc: prachiProfile, // Use the imported image variable
   },
 ];
 
