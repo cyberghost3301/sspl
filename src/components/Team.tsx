@@ -11,9 +11,9 @@ import ishaProfile from '../assets/isha.jpg';
 import shashankProfile from '../assets/shashank.jpg';
 import anshumanProfile from '../assets/anshuman.jpg'
 import shristiProfile from '../assets/shristi.jpg';
-import janviProfile from '../assets/janvi.jpg'
-import srishtiProfile from '../assets/srishti.jpg';
 import asthaProfile from '../assets/astha.jpg'
+import janviProfile from '../assets/janvi.jpg'
+import sanchitaProfile from '../assets/sanchita.jpg'
 import nabeelaProfile from '../assets/nabeela.jpg'
 import anushkaProfile from '../assets/anushka.jpg'
 import rushnaProfile from '../assets/rushna.jpg'
@@ -28,12 +28,12 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     name: 'Aum Chatterjee',
-    title: 'Executive Director',
+    title: 'Founder',
     imageSrc: aumProfile, // Use the imported image variable
   },
   {
     name: 'Deshesh Agnihotri',
-    title: 'Managing Director',
+    title: 'Director ',
     imageSrc: desheshProfile, // Use the imported image variable
   },
   {
@@ -53,7 +53,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: 'Isha Aurora',
-    title: 'Market Insights Advisor',
+    title: 'Market Advisor',
     imageSrc: ishaProfile, // Use the imported image variable
   },
   {
@@ -63,7 +63,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: 'Prof. R. R. Maurya',
-    title: 'External HR',
+    title: 'Business Adviser',
     imageSrc: rahulProfile, // Use the imported image variable
   },
   {
@@ -77,24 +77,24 @@ const teamMembers: TeamMember[] = [
     imageSrc: shristiProfile, // Use the imported image variable
   },
   {
-    name: 'Janvi Gautam',
-    title: 'Business Operations',
-    imageSrc: janviProfile, // Use the imported image variable
-  },
-  {
     name: 'Astha Dwivedi',
     title: 'Business Dev. Rep.',
     imageSrc: asthaProfile, // Use the imported image variable
   },
   {
+    name: 'Janvi Gautam',
+    title: 'Business Operations',
+    imageSrc: janviProfile, // Use the imported image variable
+  },
+  {
+    name: 'Sanchita Nath',
+    title: 'Development Coordinator',
+    imageSrc: sanchitaProfile, // Use the imported image variable
+  },
+  {
     name: 'Er. Nabeela Jamil',
     title: 'CPRO',
     imageSrc: nabeelaProfile, // Use the imported image variable
-  },
-  {
-    name: 'Srishti Saxena',
-    title: 'CRGO',
-    imageSrc: srishtiProfile, // Use the imported image variable
   },
   {
     name: 'Anushka Singh',
