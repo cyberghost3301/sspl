@@ -9,7 +9,7 @@ import laraibProfile from '../assets/pplaraib.jpg';
 import anshumanProfile from '../assets/ppanshuman.jpg'
 import rahulProfile from '../assets/placeholder.jpg'
 import aakashProfile from '../assets/ppaakash.jpg';
-import shashankProfile from '../assets/placeholder.jpg';
+import shashankProfile from '../assets/ppshashank.jpg';
 import ishaProfile from '../assets/placeholder.jpg'
 import shristiProfile from '../assets/placeholder.jpg';
 import asthaProfile from '../assets/ppastha.jpg'
