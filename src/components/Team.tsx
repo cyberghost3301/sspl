@@ -52,7 +52,7 @@ const teamMembers: TeamMember[] = [
     imageSrc: laraibProfile, // Use the imported image variable
   },
   {
-    name: 'Anshuman Singh',
+    name: 'Er. Anshuman Singh',
     title: 'Innovation Catalyst',
     imageSrc: anshumanProfile, // Use the imported image variable
   },
@@ -62,12 +62,12 @@ const teamMembers: TeamMember[] = [
     imageSrc: rahulProfile, // Use the imported image variable
   },
   {
-    name: 'Aakash Srivastava',
+    name: 'Er. Aakash Srivastava',
     title: 'External Consultant',
     imageSrc: aakashProfile, // Use the imported image variable
   },
   {
-    name: 'Shashank Rao',
+    name: 'Er. Shashank Rao',
     title: 'Project Collaborator',
     imageSrc: shashankProfile, // Use the imported image variable
   },
