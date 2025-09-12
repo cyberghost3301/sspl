@@ -14,7 +14,6 @@ import ishaProfile from '../assets/placeholder.jpg'
 import shristiProfile from '../assets/placeholder.jpg';
 import asthaProfile from '../assets/ppastha.jpg'
 import sanchitaProfile from '../assets/ppsanchita.jpg'
-import nabeelaProfile from '../assets/ppnabeela.jpg'
 import prachiProfile from '../assets/placeholder.jpg'
 import janviProfile from '../assets/ppjanvi.jpg';
 import rushnaProfile from '../assets/pprushna.jpg'
@@ -105,11 +104,6 @@ const teamMembers: TeamMember[] = [
     name: 'Isha',
     title: 'Market Advisor',
     imageSrc: ishaProfile, // Use the imported image variable
-  },
-  {
-    name: 'Er. Nabeela',
-    title: 'CPRO',
-    imageSrc: nabeelaProfile, // Use the imported image variable
   },
   {
     name: 'Srishti',
