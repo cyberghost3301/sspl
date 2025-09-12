@@ -72,9 +72,9 @@ const teamMembers: TeamMember[] = [
     imageSrc: shashankProfile, // Use the imported image variable
   },
   {
-    name: 'Isha',
-    title: 'Market Advisor',
-    imageSrc: ishaProfile, // Use the imported image variable
+    name: 'Prachi',
+    title: 'HRM',
+    imageSrc: prachiProfile, // Use the imported image variable
   },
   {
     name: 'Shristi',
@@ -92,16 +92,6 @@ const teamMembers: TeamMember[] = [
     imageSrc: sanchitaProfile, // Use the imported image variable
   },
   {
-    name: 'Er. Nabeela',
-    title: 'CPRO',
-    imageSrc: nabeelaProfile, // Use the imported image variable
-  },
-  {
-    name: 'Prachi',
-    title: 'Junior Analyst',
-    imageSrc: prachiProfile, // Use the imported image variable
-  },
-  {
     name: 'Janvi',
     title: 'Business Operations',
     imageSrc: janviProfile, // Use the imported image variable
@@ -110,6 +100,16 @@ const teamMembers: TeamMember[] = [
     name: 'Rushna',
     title: 'CRC',
     imageSrc: rushnaProfile, // Use the imported image variable
+  },
+  {
+    name: 'Er. Nabeela',
+    title: 'CPRO',
+    imageSrc: nabeelaProfile, // Use the imported image variable
+  },
+  {
+    name: 'Isha',
+    title: 'Market Advisor',
+    imageSrc: ishaProfile, // Use the imported image variable
   },
   {
     name: 'Srishti',
