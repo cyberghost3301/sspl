@@ -102,14 +102,14 @@ const teamMembers: TeamMember[] = [
     imageSrc: rushnaProfile, // Use the imported image variable
   },
   {
-    name: 'Er. Nabeela',
-    title: 'CPRO',
-    imageSrc: nabeelaProfile, // Use the imported image variable
-  },
-  {
     name: 'Isha',
     title: 'Market Advisor',
     imageSrc: ishaProfile, // Use the imported image variable
+  },
+  {
+    name: 'Er. Nabeela',
+    title: 'CPRO',
+    imageSrc: nabeelaProfile, // Use the imported image variable
   },
   {
     name: 'Srishti',
