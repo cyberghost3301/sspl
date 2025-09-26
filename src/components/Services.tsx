@@ -39,21 +39,21 @@ const servicesData: ServiceItem[] = [
     description: "Holistic solutions for residential and commercial spaces, including full interior design, architectural planning, and project management to create functional, aesthetically pleasing environments.",
   },
   {
-    icon: FaCloud,
-    title: "Networking & Cloud Solutions",
-    description: "Comprehensive services including networking setup, robust data/computing server installations, seamless Cloud/Ml/AI solutions, and IoT integrations.",
+    icon: FaLaptopCode,
+    title: "Computer & Laptop Solutions",
+    description: "Trading and repair of all types of desktop, laptops, and related Hardware/Software components both Commercial or Residential.",
   },
-  // REST OF THE CARDS REMAIN IN THEIR ORIGINAL ORDER:
   {
     icon: FaSolarPanel,
     title: "Solar Power Systems",
     description: "Complete project undertakings for efficient and sustainable On-Grid/Off-Grid/Hybrid solar power systems for homes and businesses.",
   },
   {
-    icon: FaLaptopCode,
-    title: "Computer & Laptop Solutions",
-    description: "Trading and repair of all types of desktop, laptops, and related Hardware/Software components both Commercial or Residential.",
+    icon: FaCloud,
+    title: "Networking & Cloud Solutions",
+    description: "Comprehensive services including networking setup, robust data/computing server installations, seamless Cloud/Ml/AI solutions, and IoT integrations.",
   },
+  // REST OF THE CARDS REMAIN IN THEIR ORIGINAL ORDER:
   {
     icon: FaVideo,
     title: "Audio Visual & Studio Setups",
