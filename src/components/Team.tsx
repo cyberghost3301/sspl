@@ -15,8 +15,8 @@ import shristiProfile from '../assets/placeholder.jpg';
 import asthaProfile from '../assets/ppastha.jpg'
 import sanchitaProfile from '../assets/ppsanchita.jpg'
 import prachiProfile from '../assets/placeholder.jpg'
+import kavyaProfile from '../assets/kavya.jpg'
 import janviProfile from '../assets/ppjanvi.jpg';
-import rushnaProfile from '../assets/pprushna.jpg'
 import srishtiProfile from '../assets/ppsrishti.jpg'
 import anushkaProfile from '../assets/ppanushka.jpg'
 import ektaProfile from '../assets/ppekta.jpg'
@@ -96,9 +96,9 @@ const teamMembers: TeamMember[] = [
     imageSrc: janviProfile, // Use the imported image variable
   },
   {
-    name: 'Rushna',
-    title: 'CRC',
-    imageSrc: rushnaProfile, // Use the imported image variable
+    name: 'Kavya',
+    title: 'DS/AIML',
+    imageSrc: kavyaProfile, // Use the imported image variable
   },
   {
     name: 'Isha',
