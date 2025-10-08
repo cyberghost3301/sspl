@@ -79,8 +79,8 @@ const Contact: React.FC = () => {
             <div className="space-y-6 animate-[slideInLeft_1s_ease-out_forwards_0.9s] opacity-0">
                 <div className="flex items-center space-x-4">
                     <FaPhone className="text-4xl text-blue-300" />
-                    <a href="tel:+917651882563" className="text-2xl hover:underline whitespace-nowrap font-semibold">
-                        +91 7651882563
+                    <a href="tel:+919250974145" className="text-2xl hover:underline whitespace-nowrap font-semibold">
+                        +91 9250974145
                     </a>
                 </div>
                 <div className="flex items-center space-x-4">

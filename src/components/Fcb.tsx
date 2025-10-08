@@ -3,8 +3,8 @@ import React from 'react';
 import { FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
 
 const Fcb: React.FC = () => {
-  const phoneNumber = '+917651882563'; // Your actual phone number
-  const whatsappNumber = '917651882563'; // Your WhatsApp number (without the +)
+  const phoneNumber = '+919250974145'; // Your actual phone number
+  const whatsappNumber = '919250974145'; // Your WhatsApp number (without the +)
 
   return (
     <div className="fixed bottom-6 left-6 md:bottom-8 md:left-8 flex flex-col space-y-4 z-50">
