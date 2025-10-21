@@ -6,6 +6,7 @@ import aumProfile from '../assets/placeholder.jpg';
 import desheshProfile from '../assets/ppdeshesh.jpg';
 import saurabhProfile from '../assets/placeholder.jpg';
 import laraibProfile from '../assets/pplaraib.jpg';
+import antaraProfile from '../assets/placeholder.jpg';
 import anshumanProfile from '../assets/ppanshuman.jpg'
 import rahulProfile from '../assets/pprahul.jpg'
 import aakashProfile from '../assets/ppaakash.jpg';
@@ -49,6 +50,11 @@ const teamMembers: TeamMember[] = [
     name: 'Ar. Laraib',
     title: 'Consulting Architect',
     imageSrc: laraibProfile, // Use the imported image variable
+  },
+  {
+    name: 'Antara',
+    title: 'COO',
+    imageSrc: antaraProfile, // Use the imported image variable
   },
   {
     name: 'Er. Anshuman',
