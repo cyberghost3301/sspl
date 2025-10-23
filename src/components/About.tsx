@@ -25,7 +25,7 @@ const About: React.FC = () => {
           <div className="md:order-1 text-center md:text-left animate-[slideInLeft_1s_ease-out_forwards_0.8s] opacity-0">
             <h3 className="text-3xl font-semibold text-indigo-600 mb-4">Renowned Assorted Solutions Provider</h3>
             <p className="text-lg leading-relaxed mb-4">
-              Based in the heart of Lucknow, Uttar Pradesh, SPIRECREST SOLUTIONS PRIVATE LIMITED operates as a diversified technology solutions provider, serving individual consumers and businesses nationwide. Our mission is to deliver cutting-edge technology and unparalleled service right to your doorstep, or digitally, wherever you are.
+              Based in the heart of Lucknow, Uttar Pradesh, SPIRECREST operates as a diversified technology solutions provider, serving individual consumers and businesses nationwide. Our mission is to deliver cutting-edge technology and unparalleled service right to your doorstep, or digitally, wherever you are.
             </p>
             <p className="text-lg leading-relaxed">
               We pride ourselves on providing highly customized solutions in niche areas such as advanced surveillance, intricate home automation, sophisticated motorized systems, unique custom PC builds, professional studio setups, cinematic home theatres, and premium solar projects. While maintaining a compact core team of 11–12 experts, we ensure nationwide service capability and flexible scaling through our robust network of 450+ trusted freelance and outsourced specialists on retainer. We also occasionally engage in works related to interior design/decor and construction/civil, adapting to diversified needs of our clientele.
